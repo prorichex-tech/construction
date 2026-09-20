@@ -1369,4 +1369,40 @@ input[type=range] {
     .floating-note {
         right:8px;
     }
+    @media (max-width: 800px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
+    .hero-new,
+    .hero-main,
+    .hero-art,
+    .statement,
+    .services-new,
+    .work-wall,
+    .reach,
+    .calculator-new,
+    .process-new,
+    .compare-new,
+    .details-new,
+    .map-contact,
+    .final-new,
+    .footer-new {
+        max-width: 100%;
+    }
+
+    .hero-line {
+        left: 0;
+    }
+
+    .hero-art {
+        overflow: hidden;
+    }
+
+    .floating-note {
+        right: 8px;
+    }
 }
