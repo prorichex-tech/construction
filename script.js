@@ -1,0 +1,3 @@
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const x=document.querySelector(a.getAttribute('href'));if(x){e.preventDefault();x.scrollIntoView({behavior:'smooth'})}}));
+const form=document.querySelector('#form');form.addEventListener('submit',e=>{e.preventDefault();const b=form.querySelector('button'),old=b.innerHTML;b.innerHTML='Заявка отправлена ✓';b.disabled=true;setTimeout(()=>{form.reset();b.innerHTML=old;b.disabled=false},2500)});
+const menu=document.querySelector('.menu'),nav=document.querySelector('nav');menu.addEventListener('click',()=>{nav.classList.toggle('show')});
